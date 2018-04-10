@@ -1,0 +1,84 @@
+---
+layout: default
+title: Ashley Snider for Magistrate District 6
+---
+<div class="bio">
+  <div class="image">
+    <img src="/assets/img/ashley.jpg" alt="">
+  </div>
+  <div class="bio-text">
+    <p>In 2007, I moved to Shelbyville from Oldham County and have lived in various parts of the county since then. I fell in love with it the first few weeks I moved here. Every where you go the people treat you like family and that’s when I knew I wanted to raise my son, Jackson, here. He has attended Clear Creek Elementary since kindergarten and we both love the school and the administration. He has blossomed and I know it has every bit to do with the men and women working in that facility. Shelby County schools are thriving and could be top of the state soon. This is a great place to call home and I’m blessed to live here. It’s one of the reasons I decided to run. I believe this community is a treasure and I truly believe I can help it grow into something spectacular.</p>
+    <p>As your Magistrate, if elected, I promise to help allocate county funding to the best projects and needs as I can. One of my best qualities is my resourcefulness. I have the ability to think outside the box and come up with creative and cost effective ways to help any situation. I feel our county could use someone that not only has this ability but is never afraid to speak up for my constituents. As COPE (committee on political education) chairman of Local 83761 IUECWA, my union organization, I serve on many boards that deal with funding and voicing my opinion in various matters. I have always stood up for the working class and will find a way to make things work while still paying a fair wage and completing a project. I currently work at Haier, formerly known as General Electric, as a Zone Leader. While there I worked on countless community projects. I also serve as a trustee on the board of Louisville Metro Central Labor Council. We do projects from housing a homeless veteran to rallying in Frankfort for ALL state employees affected by the bills being passed affecting their pension, sick days, and pay.</p>
+    <p>Empathy is one of my greatest qualities; Any issue my district feels important I will never stop fighting for. I will always do what’s right for the people in District 6 and I hope to have you vote in the primary May 22nd.</p>
+  </div>
+</div>
+<div class="people-endorse">
+  <a id="people"></a>
+  <h2 class="section-title">People Who Endorse Ashley</h2>
+  {% for endorsement in site.data.endorsements limit:3 %}
+  <div class="endorsement">
+    <div class="endorsement-img-container">
+      <img class="endorsement-img" src="/assets/img/{{ endorsement.photo }}.jpg" alt="">
+    </div>
+    <h3 class="endorsement-name">{{ endorsement.name }}</h3>
+    <p class="endorsement-quote">{{ endorsement.quote }}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="issues">
+  <a id="issues"></a>
+  <h2 class="section-title">Issues</h2>
+  <p>Shelby County is a wonderful place to live, work, and raise a family.  However, there are many issues facing our community that must be addressed in order to keep us moving in the right direction.</p>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-wifi"></i></div>
+    <div class="issue-text">
+      <h3>Expand broadband access</h3>
+      <p>Broadband needs to be extended to our rural areas. Communication is key in this day and age.  When our children have SnowGo days some of them don’t even have the access necessary to complete school work assignments. A child’s education should be our top priority.</p>
+    </div>
+  </div>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-road"></i></div>
+    <div class="issue-text">
+      <h3>Invest in our roads</h3>
+      <p>The county roads need to be fixed and expanded. When inclement weather hits the area many of these roads are completely impassable. Some people can’t even safely leave their home. We want to expand our area and make money but not at the cost of safety for our loved ones.</p>
+    </div>
+  </div>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-bus"></i></div>
+    <div class="issue-text">
+      <h3>Improve access to transporation for all residents</h3>
+      <p>There needs to be a better access to transportation for our lower income residents. Not all residents in this area have access to a vehicle and some have a medical condition preventing them from even leaving their home. We must come up with a way to help each other.</p>
+    </div>
+  </div>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-hospital-alt"></i></div>
+    <div class="issue-text">
+      <h3>Invest in our healthcare system</h3>
+      <p>The hospital being sold by KentuckianaOne is a major concern for our community. Our residents need access to medical care. If someone needs immediate care they will have to go to Frankfort or Louisville.  We need to ensure that Shelby county has high quality heathcare services.</p>
+    </div>
+  </div>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-prescription-bottle"></i></div>
+    <div class="issue-text">
+      <h3>Addressing the opioid epidemic</h3>
+      <p>I’d like to bring up the opioid epidemic hitting our streets. We must stop talking about these things and actually take action. Everyone loves to talk about these issues but what are we going to do about them? If elected as Magistrate I will make these issues my number one priority.</p>
+    </div>
+  </div>
+  <div class="issue-container">
+    <div class="issue-icon"><i class="fas fa-hands-helping"></i></div>
+    <div class="issue-text">
+      <h3>Our future</h3>
+      <p>Expansion is key to the growth of our community but we must do it properly and be effective. If we don’t take these matters seriously now bigger issues will arise and it shouldn’t come at the cost of the our family, friends, and neighbors. Shelbyville truly is a gem and we have to do everything we can to preserve its charm.</p>
+    </div>
+  </div>
+</div>
+<div class="group-endorse">
+  <a id="groups"></a>
+  <h2 class="section-title">Groups Supporting Ashley</h2>
+  {% for groupendorsement in site.data.groupendorsements %}
+  <div class="group-endorsement">
+    <img class="group-endorsement-img" src="/assets/img/endorsements/{{ groupendorsement.photo }}.jpg" alt="">
+    <h3 class="group-endorsement-name">{{ groupendorsement.name }}</h3>
+  </div>
+  {% endfor %}
+</div>

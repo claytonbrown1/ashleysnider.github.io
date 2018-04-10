@@ -1,0 +1,203 @@
+$logoWidth: 500px
+$smallLogoWidth: (0.5*$logoWidth)
+$navbarPadding: (0.5*$logoWidth)
+$headerColor: #1D2738
+
+header
+  padding-top: 10px
+  width: 100%
+  padding: 10px 0
+
+.header-container
+  +outer-container(90%)
+
+.logo
+  .logoimg
+    display: block
+    width: $smallLogoWidth
+    transition: width .25s
+    margin: 0 auto
+
+    +media($screen)
+      width: $logoWidth
+      float: left
+
+
+  +media($mobile)
+    padding: 10px 0
+
+  +media($smlphone)
+    padding: 10px 0
+
++media($screen)
+  .logo, #mc_embed_signup
+    +span-columns(6)
+
+//EMAIL FIELD
+.mc-field-group input
+  width: 100%
+  margin-bottom: 5px
+  height: 35px
+
+input#mc-embedded-subscribe
+  width: 100%
+  color: white
+  font-weight: 800
+  text-transform: uppercase
+  background-color: $secondary
+  height: 35px
+
++media($screen)
+  #mc_embed_signup
+    margin-top: 35px
+
+  .mc-field-group
+    float: left
+
+  input#mc-embedded-subscribe
+    width: inherit
+    border: none
+    background-color: $secondary
+    color: white
+    text-transform: uppercase
+    font-weight: 800
+    height: 35px
+
+    &:hover
+      background-color: darken($secondary, 10%)
+
+  .mc-field-group input
+    width: inherit
+    height: 35px
+    border: none
+    border-bottom: 3px solid $secondary
+    margin-right: 5px
+
+    &:focus
+      outline: none
+      border-bottom: 3px solid darken($secondary, 30%)
+
+// #mobile-menu-button
+//   display: block
+//   float: right
+//   margin-top: $navbarPadding/8
+//
+//   +media($screen)
+//     display: none
+//
+// #navbar
+//   float: none
+//   margin-top: 0
+//
+//   +media($screen)
+//     float: right
+//     margin-top: 37.5px
+//
+//   +media($tablet)
+//     position: relative
+//     padding-bottom: 10px
+//     clear: both
+//
+//   +media($mobile)
+//     position: relative
+//     padding-bottom: 10px
+//     clear: both
+//
+//   +media($smlphone)
+//     position: relative
+//     padding-bottom: 10px
+//     clear: both
+//
+// ul.nav-menu
+//   list-style: none
+//   position: absolute
+//   float: left
+//   margin: 0
+//   padding: 0
+//
+//   +media($screen)
+//     position: relative
+//
+//   +media($tablet)
+//     right: 0
+//     top: 10px
+//     width: 100%
+//     display: none
+//     background-color: white
+//
+//   +media($mobile)
+//     right: 0
+//     top: 10px
+//     width: 100%
+//     display: none
+//     background-color: white
+//
+//   +media($smlphone)
+//     right: 0
+//     top: 10px
+//     width: 100%
+//     display: none
+//     background-color: white
+//
+//   &.show
+//     display: block
+//
+//   a
+//     color: $secondary
+//     display: block
+//     text-decoration: none
+//     font-weight: 700
+//     line-height: 32px
+//     padding: 0 15px
+//     font-size: 1.5em
+//     text-transform: uppercase
+//     transition: font-size .25s, padding .25s
+//
+//     +media($screen)
+//       font-size: 1em
+//
+//       &:hover
+//         color: $primary
+//
+//     +media($smlscreen)
+//       font-size: 1.25em
+//       padding: 0 5px
+//
+// ul li.nav-link
+//   position: relative
+//   display: inline-block
+//   margin: 0
+//   padding: 0
+//
+//   +media($tablet)
+//     display: block
+//     text-align: right
+//
+//     ul
+//       position: static
+//
+//   +media($mobile)
+//     display: block
+//     text-align: right
+//
+//     ul
+//       position: static
+//
+//   +media($smlphone)
+//     display: block
+//     text-align: right
+//
+//     ul
+//       position: static
+//
+// .donate
+//   color: white
+//
+//   +media($screen)
+//     color: white
+//     background-color: $primary
+//     transition: background-color .25s, color .25s
+//
+//     &:hover
+//       background-color: white
+//       color: $primary

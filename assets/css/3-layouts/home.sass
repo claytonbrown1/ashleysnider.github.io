@@ -1,0 +1,112 @@
+.bio, .group-endorse, .people-endorse, .issues
+  +outer-container(90%)
+
+.section-title
+  text-align: center
+  font-size: 2.5em
+
+//BIO
+
+.image
+  img
+    width: 50%
+    display: block
+    margin: 0 auto
+
++media($screen)
+  .image
+    +span-columns(4)
+
+    img
+      width: 100%
+
+  .bio-text
+    +span-columns(8)
+    font-size: 1.125em
+
+// ISSUES
+.issue-container
+  height: 100%
+
+.issue-icon
+  font-size: 2em
+  text-align: center
+  color: $secondary
+
+.issue-text
+  h3
+    text-align: center
+
++media($screen)
+  .issue-icon
+    +span-columns(1)
+    font-size: 3em
+    text-align: center
+    color: $secondary
+  .issue-text
+    +span-columns(11)
+    h3
+      margin: 0
+      text-align: inherit
+    p
+      font-size: 1.125em
+
+// GROUP ENDORSEMENTS
++media($screen)
+  .group-endorsement
+    +span-columns(3)
+    +omega(4n)
+
+.group-endorsement-img
+  display: block
+  margin: 0 auto
+  max-width: 50%
+
+.group-endorsement-name
+  text-align: center
+  font-size: 2em
+
+// PEOPLE ENDORSEMENTS
+
+.endorsement-img-container
+  width: 175px
+  height: 175px
+  position: relative
+  overflow: hidden
+  border-radius: 50%
+  margin: 0 auto
+
+.endorsement-img
+  display: inline
+  margin: 0 auto
+  height: 100%
+  width: auto
+
+.endorsement-name
+  text-align: center
+  font-size: 1.5em
+
++media($screen)
+  .endorsement
+    +span-columns(4)
+
+    p
+      font-size: 1.125em
+
+  .endorsement-img-container
+    width: 250px
+    height: 250px
+    position: relative
+    overflow: hidden
+    border-radius: 50%
+    margin: 0 auto
+
+  .endorsement-img
+    display: inline
+    margin: 0 auto
+    height: 100%
+    width: auto
+
+  .endorsement-name
+    text-align: center
+    font-size: 2em
